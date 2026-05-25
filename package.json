@@ -1,0 +1,26 @@
+{
+  "name": "unswitch-slack",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Slack-native rebuild of Unswitch — an AI focus assistant that triages incoming messages.",
+  "type": "commonjs",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@slack/bolt": "^4.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
